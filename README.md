@@ -1,4 +1,4 @@
-# WEB102 Prework - *Name of App Here*
+# WEB102 Prework - Game Funding Search
 
 Submitted by: James Hoag
 
@@ -34,8 +34,8 @@ GIF created with ...  LiceCap
 
 ## Notes
 
-Describe any challenges encountered while building the app.
-was challenging to get the filtered games to work at first , but after some time was able to figure it out.
+
+It was challenging to get the filtered games to work at first , but after some time was able to figure it out.
 ## License
 
     Copyright [yyyy] [name of copyright owner]
