@@ -19,6 +19,27 @@ body {
     margin-top: -10px;
 }
 
+.welcome-and-search-container {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+.search-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#search-bar {
+    height: 30px;
+    margin: 20px;
+}
+
+#search-button {
+    height: 50px;
+}
 .stats-container {
     display: flex;
     align-items: center;
