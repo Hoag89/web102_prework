@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Cabin';
-    background-color: #758190;
+    background-color: #abcbf1;
 }
 
 #tentacles {
@@ -11,24 +11,70 @@ body {
 
 .header {
     display: flex;
-    background-color: lightblue;
+    background-color: rgb(173, 230, 230);
     padding: 1%;
     align-items: center;
     margin-left: -10px;
-    margin-right: -10px;
+    margin-right: -500px;
     margin-top: -10px;
 }
 
-.welcome-and-search-container {
+.navbar {
+    width: 60%;
+    top: 0;
+    margin: 20px;
+    z-index: 100; /* Adjust the z-index value as needed */
+  }
+
+.navbar ul {
+    list-style: none;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navbar ul li a{
+    font-family: "cabin";
+    color: black;
+    text-decoration: none;
+  }
+ul {
+    font-size: x-large;
+}
+
+#welcome-and-search-container {
 display: flex;
 flex-direction: row;
-justify-content: space-evenly;
+justify-content: space-between;
 }
+
+#welcome-and-search-container > div {
+    position: relative;
+    
+  }
+  
+  #welcome-and-search-container > div > img {
+    position: absolute;
+    top: 20px; /* Adjust as needed to position the image vertically */
+    left: 150px; /* Adjust as needed to position the image horizontally */
+    width: 120%; /* Ensure it covers the entire container */
+    z-index: -1; /* Place it behind the text and buttons */
+  }
+
+#welcome-text{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 
 .search-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-right: 200px;
+
     
 }
 
@@ -67,12 +113,13 @@ justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: rgb(231, 231, 225);
 }
 
 .game-img {
     width: 100%;
     border-radius: 5px;
-    box-shadow: 0 0 10px #FFFFFF;
+    box-shadow: 0 0 10px #ffffff;
 }
 
 .game-card {
@@ -99,4 +146,9 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }

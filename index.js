@@ -212,23 +212,15 @@ const searchBar = document.getElementById("search-bar");
 const searchButton = document.getElementById("search-button");
 searchButton.addEventListener("click",searchGames);
 function searchGames() {
+    // clear the html gamesContainer 
+    deleteChildElements(gamesContainer);
     const query = searchBar.value.toLowerCase();
+    // filter games for included in search bar
     const searchResult = GAMES_JSON.filter( (game) => {
         return game.name.toLowerCase().includes(query) 
  });
-    displayGames(searchResult);
+//  call the function that adds the games to the page
+    addGamesToPage(searchResult);
 }
-// display the results
-function displayGames(game) {
-    // clear any existing games in the element
-gamesContainer.innerHTML = `
-<h3>${game.name}</h3>
-<p>Pledged: ${game.pledged}</p>
-<img src="${game.img}" alt="${game.name}" class='game-img'> 
-`;
-// create new element for filtered game and append to container
-game.forEach(game => {
-    const gameElement = addGamesToPage(game);
-    gamesContainer.append(gameElement);
-});
-}
+
+
